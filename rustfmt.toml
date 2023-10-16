@@ -1,0 +1,35 @@
+# rustfmt.toml
+
+# Use the default edition of Rust in the project
+edition = "2018"
+
+# Max width for the line
+max_width = 100
+
+# Where to put the opening brace of items
+brace_style = "SameLineWhere"
+
+# Indent the where clause
+where_density = "tall"
+
+# Reorder imported names
+reorder_imports = true
+reorder_imported_names = true
+
+# Always use the trailing comma for multiline lists and structs
+trailing_comma = "Always"
+
+# Use 4 spaces for indentation
+tab_spaces = 4
+
+# Put comments inside the control brace
+control_brace_style = "AlwaysSameLine"
+
+# Format doc comments
+format_doc_comments = true
+
+# Keep single-line if-else in a single line
+single_line_if_else_max_width = 50
+
+# Do not chain vertical calls
+chain_width = 80
