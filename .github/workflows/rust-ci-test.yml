@@ -50,5 +50,5 @@ jobs:
         with:
           tool: cargo-binstall
 
-      - run: cargo binstall cargo-tarpaulin
+      - run: cargo binstall cargo-tarpaulin --force
       - run: cargo tarpaulin --ignore-tests
