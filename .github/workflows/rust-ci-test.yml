@@ -12,6 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: dtolnay/rust-toolchain@stable
+
+      # Install development tools
+      - name: Install development tools
+        uses: taiki-e/install-action@v2.19.2
+        with:
+          tool: cargo-binstall
+
       - run: cargo test --all-features
 
   fmt:
@@ -36,5 +43,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: dtolnay/rust-toolchain@stable
-      - run: cargo install cargo-tarpaulin
+
+      # Install development tools
+      - name: Install development tools
+        uses: taiki-e/install-action@v2.19.2
+        with:
+          tool: cargo-binstall
+
+      - run: cargo binstall cargo-tarpaulin
       - run: cargo tarpaulin --ignore-tests
