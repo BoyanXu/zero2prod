@@ -6,6 +6,9 @@ edition = "2018"
 # Max width for the line
 max_width = 100
 
+# Max width for chains
+chain_width = 80
+
 # Where to put the opening brace of items
 brace_style = "SameLineWhere"
 
